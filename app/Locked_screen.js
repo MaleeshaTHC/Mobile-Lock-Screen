@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Button, Text, View} from 'react-native';
 import {StyleSheet} from 'react-native';
 import {Icon} from 'react-native-vector-icons/AntDesign';
+//import {BackHandler} from 'react-native-exit-app';
+import Timer from './timer';
 
 export default class Locked_screen extends Component {
   render() {
@@ -11,17 +13,20 @@ export default class Locked_screen extends Component {
           <Text style={styles.text1}>Maximum Attempts Reached</Text>
         </View>
         <View style={styles.Flex2} />
-        <View style={styles.Flex3} />
+        <View style={styles.Flex3}>
+          <Timer />
+        </View>
         <View style={styles.Flex4}>
           <Text style={styles.text2}>
-            To protect your information, access {'\n'}has been locked for 1 minute.
+            To protect your information, access {'\n'}has been locked for 1
+            minute.
             {'\n'}
             Come back later and try again.
           </Text>
         </View>
         <View style={styles.Flex5}>
           <View style={styles.fixToText}>
-            <Button title="Quite" color="blue" />
+            <Button title="Quit" color="blue" />
           </View>
         </View>
       </View>
