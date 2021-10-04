@@ -15,21 +15,18 @@ export default class Numbers extends Component {
       {id: 0},
     ];
     return (
-      <View style={styles.childTwo}>
-        <View style={styles.container}>
-          {no.map(no => {
-            return (
-              <TouchableHighlight
-                activeOpacity={0.5}
-                underlayColor="#b3d1e3"
-                onPress={() => this._onPressNumber(no.id)}
-                style={styles.round}
-                key={no.id}>
-                <Text style={styles.numberText}>{no.id}</Text>
-              </TouchableHighlight>
-            );
-          })}
-        </View>
+      <View style={styles.container}>
+        {no.map(no => {
+          return (
+            <TouchableHighlight
+              activeOpacity={0.5}
+              underlayColor="#b3d1e3"
+              style={styles.round}
+              key={no.id}>
+              <Text style={styles.numberText}>{no.id}</Text>
+            </TouchableHighlight>
+          );
+        })}
       </View>
     );
   }

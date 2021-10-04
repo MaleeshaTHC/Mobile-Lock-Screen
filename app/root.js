@@ -1,18 +1,12 @@
 import React, {Component} from 'react';
 import {View} from 'react-native';
 import {StyleSheet} from 'react-native';
+import Locked_screen from './Locked_screen';
 import Numbers from './Numbers';
 
 export default class Root extends Component {
   render() {
-    return (
-      <View style={styles.main}>
-        <View style={styles.upper} />
-        <View style={styles.lower}>
-          <Numbers />
-        </View>
-      </View>
-    );
+    return <Locked_screen />;
   }
 }
 
