@@ -6,7 +6,7 @@ import Numbers from './Numbers';
 
 export default class Root extends Component {
   render() {
-    return <Locked_screen />;
+    return <Numbers />;
   }
 }
 

@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import {Button, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
 import {StyleSheet} from 'react-native';
-import {Icon} from 'react-native-vector-icons/AntDesign';
-//import {BackHandler} from 'react-native-exit-app';
+import Quit from './Quit';
 import Timer from './timer';
 
 export default class Locked_screen extends Component {
@@ -25,9 +24,7 @@ export default class Locked_screen extends Component {
           </Text>
         </View>
         <View style={styles.Flex5}>
-          <View style={styles.fixToText}>
-            <Button title="Quit" color="blue" />
-          </View>
+          <Quit />
         </View>
       </View>
     );
@@ -38,40 +35,40 @@ const styles = StyleSheet.create({
   main: {
     flex: 1,
     alignContent: 'center',
+    justifyContent: 'center',
   },
   Flex1: {
     flex: 1,
   },
   Flex2: {
     flex: 1,
-    alignItems: 'center',
+    justifyContent: 'center',
   },
   Flex3: {
     flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   Flex4: {
     flex: 1,
+    justifyContent: 'center',
   },
   Flex5: {
     flex: 1,
+    justifyContent: 'center',
     alignItems: 'center',
   },
   text1: {
     fontFamily: 'Roboto',
-    fontSize: 18,
+    fontSize: 25,
     color: 'red',
     textAlign: 'center',
     marginTop: 80,
   },
   text2: {
     fontFamily: 'Roboto',
-    fontSize: 17,
+    fontSize: 20,
     color: 'black',
     textAlign: 'center',
-  },
-  fixToText: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 40,
   },
 });

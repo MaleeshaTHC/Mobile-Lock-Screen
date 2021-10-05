@@ -1,6 +1,7 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, {Component} from 'react';
-import {Button, Text, View} from 'react-native';
-import {StyleSheet, Platform} from 'react-native';
+import {View} from 'react-native';
+import {StyleSheet} from 'react-native';
 import CountDown from 'react-native-countdown-component';
 
 export default class Timer extends Component {
@@ -8,10 +9,16 @@ export default class Timer extends Component {
     return (
       <View style={styles.container}>
         <CountDown
-          until={61}
+          until={60}
           onFinish={this.onDoneCountdown}
           size={20}
-          timeToShow={('H', 'M', 'S')}
+          timeToShow={['M', 'S']}
+          timeLabels={{m: null, s: null}}
+          digitStyle={{
+            backgroundColor: '#FFF',
+          }}
+          digitTxtStyle={{color: 'black'}}
+          showSeparator
         />
       </View>
     );
@@ -20,8 +27,11 @@ export default class Timer extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: Platform.OS === 'ios' ? 20 : 0,
-    alignItems: 'center',
+    width: 110,
+    height: 65,
+    backgroundColor: 'white',
+    borderColor: 'black',
+    borderWidth: 1.5,
     justifyContent: 'center',
   },
 });
