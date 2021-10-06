@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, TouchableHighlight, View} from 'react-native';
+import {Text, View} from 'react-native';
 import {StyleSheet} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -22,7 +22,7 @@ export default class Delete extends Component {
 const styles = StyleSheet.create({
   text: {
     position: 'absolute',
-    bottom: 25,
+    bottom: 18,
     left: 90,
     fontFamily: 'Roboto',
     fontSize: 15,

@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import {Text, TouchableHighlight, View} from 'react-native';
 import {StyleSheet} from 'react-native';
+import BackHandler from 'react-native';
 
 export default class Quit extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableHighlight style={styles.button}>
+        <TouchableHighlight
+          style={styles.button}
+          onPress={() => this._onPressNumber(BackHandler.exitApp())}>
           <Text style={styles.text}>Quit</Text>
         </TouchableHighlight>
       </View>

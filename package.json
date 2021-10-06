@@ -15,6 +15,7 @@
     "react": "17.0.2",
     "react-native": "0.66.0",
     "react-native-countdown-component": "^2.7.1",
+    "react-native-pincode-input": "^1.0.2",
     "react-native-vector-icons": "^8.1.0",
     "vector": "^0.0.4"
   },

@@ -1,20 +1,11 @@
 import React, {Component} from 'react';
 import {TouchableHighlight, View} from 'react-native';
 import {StyleSheet} from 'react-native';
-import Number from './Numbers';
+import Locked_screen from './Locked_screen';
 
 export default class Root extends Component {
   render() {
-    return (
-      <View style={styles.main}>
-        <View style={styles.upper} />
-        <View style={styles.lower}>
-          <TouchableHighlight activeOpacity={10}>
-            <Number />
-          </TouchableHighlight>
-        </View>
-      </View>
-    );
+    return <Locked_screen />;
   }
 }
 

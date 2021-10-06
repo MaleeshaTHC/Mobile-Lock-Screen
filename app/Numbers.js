@@ -1,5 +1,11 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, TouchableHighlight, Text} from 'react-native';
+import {
+  StyleSheet,
+  View,
+  TouchableHighlight,
+  Text,
+  Pressable,
+} from 'react-native';
 import Delete from './delete';
 export default class Numbers extends Component {
   render() {
@@ -20,6 +26,7 @@ export default class Numbers extends Component {
         {no.map(no => {
           return (
             <TouchableHighlight
+              onPress={() => this._onPressNumber(no.id)}
               activeOpacity={0.5}
               underlayColor="#b3d1e3"
               style={styles.round}
@@ -28,7 +35,10 @@ export default class Numbers extends Component {
             </TouchableHighlight>
           );
         })}
-        <TouchableHighlight activeOpacity={10} style={styles.container}>
+        <TouchableHighlight
+          onPress={() => this._onPressErase()}
+          activeOpacity={10}
+          style={styles.container}>
           <Delete />
         </TouchableHighlight>
       </View>
