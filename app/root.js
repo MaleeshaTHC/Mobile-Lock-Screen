@@ -3,10 +3,11 @@ import {View} from 'react-native';
 import {StyleSheet} from 'react-native';
 import Locked_screen from './Locked_screen';
 import Numbers from './Numbers';
+//import LockIcon from './LockIcon';
 
 export default class Root extends Component {
   render() {
-    return <Numbers />;
+    return <Locked_screen />;
   }
 }
 

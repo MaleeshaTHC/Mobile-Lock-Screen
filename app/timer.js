@@ -17,7 +17,7 @@ export default class Timer extends Component {
           digitStyle={{
             backgroundColor: '#FFF',
           }}
-          digitTxtStyle={{color: 'black'}}
+          digitTxtStyle={{color: 'black', fontSize: 30, fontFamily: 'Roboto'}}
           showSeparator
         />
       </View>
@@ -27,7 +27,7 @@ export default class Timer extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    width: 110,
+    width: 150,
     height: 65,
     backgroundColor: 'white',
     borderColor: 'black',

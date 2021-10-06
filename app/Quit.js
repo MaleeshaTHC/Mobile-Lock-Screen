@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
-import {Text, View} from 'react-native';
-import {StyleSheet, Pressable} from 'react-native';
+import {Text, TouchableHighlight, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 
 export default class Quit extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Pressable style={styles.button}>
+        <TouchableHighlight style={styles.button}>
           <Text style={styles.text}>Quit</Text>
-        </Pressable>
+        </TouchableHighlight>
       </View>
     );
   }
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 25,
+    fontFamily: 'Roboto',
     lineHeight: 30,
     letterSpacing: 0.25,
     color: 'black',
