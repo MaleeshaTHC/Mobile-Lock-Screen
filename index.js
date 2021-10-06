@@ -3,7 +3,7 @@
  */
 
 import {AppRegistry} from 'react-native';
-import App from './app/Locked_screen';
+import App from './app/root';
 import {name as appName} from './app.json';
 
 AppRegistry.registerComponent(appName, () => App);

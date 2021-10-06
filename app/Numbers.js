@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, TouchableHighlight, Text} from 'react-native';
+import Delete from './delete';
 export default class Numbers extends Component {
   render() {
     let no = [
@@ -27,6 +28,9 @@ export default class Numbers extends Component {
             </TouchableHighlight>
           );
         })}
+        <TouchableHighlight activeOpacity={10} style={styles.container}>
+          <Delete />
+        </TouchableHighlight>
       </View>
     );
   }
@@ -46,11 +50,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#e6f5fa',
     justifyContent: 'center',
     alignItems: 'center',
-    margin: 8,
+    margin: 7,
   },
   text: {
     fontFamily: 'Roboto',
-    fontSize: 30,
+    fontSize: 50,
     textAlign: 'center',
     textAlignVertical: 'center',
     color: '#5095bf',

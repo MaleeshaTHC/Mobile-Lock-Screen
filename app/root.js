@@ -1,13 +1,20 @@
 import React, {Component} from 'react';
-import {View} from 'react-native';
+import {TouchableHighlight, View} from 'react-native';
 import {StyleSheet} from 'react-native';
-import Locked_screen from './Locked_screen';
-import Numbers from './Numbers';
-//import LockIcon from './LockIcon';
+import Number from './Numbers';
 
 export default class Root extends Component {
   render() {
-    return <Locked_screen />;
+    return (
+      <View style={styles.main}>
+        <View style={styles.upper} />
+        <View style={styles.lower}>
+          <TouchableHighlight activeOpacity={10}>
+            <Number />
+          </TouchableHighlight>
+        </View>
+      </View>
+    );
   }
 }
 
@@ -16,7 +23,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   upper: {
-    flex: 2.5,
+    flex: 3,
   },
   lower: {
     flex: 4,
