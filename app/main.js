@@ -8,6 +8,7 @@ export default class Main extends Component {
     this.state = {
       pincode: ['', '', '', ''],
       main_phrase: 'Enter your PIN code',
+      pin: ['1', '2', '3', '4'],
     };
   }
 
@@ -54,7 +55,7 @@ export default class Main extends Component {
     return (
       <View style={styles.main}>
         <View style={styles.upper}>
-          <Text style={styles.text_style}>Enter your PIN code</Text>
+          <Text style={styles.text_style}>{this.state.main_phrase}</Text>
           <View style={styles.background_container}>
             {this.state.pincode.map(p => {
               let style = p !== '' ? styles.pin_used : styles.pin_unused;

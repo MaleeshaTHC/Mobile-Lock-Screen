@@ -11,11 +11,15 @@
   },
   "dependencies": {
     "@haskkor/react-native-pincode": "^1.22.6",
+    "@react-navigation/native": "^6.0.4",
+    "@react-navigation/native-stack": "^6.2.2",
     "icons": "^1.0.0",
     "react": "17.0.2",
     "react-native": "0.66.0",
     "react-native-countdown-component": "^2.7.1",
     "react-native-pincode-input": "^1.0.2",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.8.0",
     "react-native-vector-icons": "^8.1.0",
     "vector": "^0.0.4"
   },
