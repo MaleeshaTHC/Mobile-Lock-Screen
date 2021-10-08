@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import {TouchableHighlight, View} from 'react-native';
+import {Text, View} from 'react-native';
 import {StyleSheet} from 'react-native';
-import Locked_screen from './Locked_screen';
+import Numbers from './Numbers';
+import Main from './main';
 
 export default class Root extends Component {
   render() {
-    return <Locked_screen />;
+    return <Main />;
   }
 }
 

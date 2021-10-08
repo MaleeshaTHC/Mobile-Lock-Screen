@@ -776,7 +776,7 @@
 
 "@haskkor/react-native-pincode@^1.22.6":
   version "1.22.6"
-  resolved "https://registry.npmjs.org/@haskkor/react-native-pincode/-/react-native-pincode-1.22.6.tgz"
+  resolved "https://registry.yarnpkg.com/@haskkor/react-native-pincode/-/react-native-pincode-1.22.6.tgz#45d4687e49f32271eb074537a67bf580265b3cad"
   integrity sha512-gfTl+MLyd4yvoDxyMlQdS31EU7kw89CYnsixK0sDvYthhH+5Cw1zePwxDLGQefOouOvI3FzgiI7s4AiS3iU2Zg==
   dependencies:
     "@react-native-community/async-storage" "^1.7.1"

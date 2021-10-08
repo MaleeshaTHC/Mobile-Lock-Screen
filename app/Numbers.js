@@ -8,6 +8,38 @@ import {
 } from 'react-native';
 import Delete from './delete';
 export default class Numbers extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      password: ['', '', '', ''],
+    };
+  }
+
+  _onPressNumber = no => {
+    let tempCode = this.state.password;
+    for (let i = 0; i < tempCode.length; i++) {
+      if (tempCode[i] === '') {
+        tempCode[i] = no;
+        break;
+      } else {
+        continue;
+      }
+    }
+    this.setState({password: tempCode});
+  };
+
+  _onPressErase = () => {
+    let tempCode = this.state.password;
+    for (let i = tempCode.length - 1; i >= 0; i--) {
+      if (tempCode[i] !== '') {
+        tempCode[i] = '';
+        break;
+      } else {
+        continue;
+      }
+    }
+    this.setState({password: tempCode});
+  };
   render() {
     let no = [
       {id: 1},

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Text, TouchableHighlight, View} from 'react-native';
 import {StyleSheet} from 'react-native';
-import BackHandler from 'react-native';
+import {BackHandler} from 'react-native';
 
 export default class Quit extends Component {
   render() {
@@ -9,7 +9,7 @@ export default class Quit extends Component {
       <View style={styles.container}>
         <TouchableHighlight
           style={styles.button}
-          onPress={() => this._onPressNumber(BackHandler.exitApp())}>
+          onPress={() => BackHandler.exitApp()}>
           <Text style={styles.text}>Quit</Text>
         </TouchableHighlight>
       </View>
@@ -44,3 +44,7 @@ const styles = StyleSheet.create({
     color: 'black',
   },
 });
+
+export function exitApp() {
+  //throw new Error('Function not implemented.');
+}

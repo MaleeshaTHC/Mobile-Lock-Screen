@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   text: {
     position: 'absolute',
     bottom: 18,
-    left: 90,
+    left: 100,
     fontFamily: 'Roboto',
     fontSize: 15,
     color: '#5095bf',
